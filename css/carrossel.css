@@ -1,0 +1,72 @@
+.carousel {
+    outline: none;
+}
+
+.carousel-track-wrapper {
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.carousel-track .empresa {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--gray-light);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--dark);
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition),
+                color var(--transition), transform var(--transition);
+}
+
+.carousel-btn:hover {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: var(--white);
+    transform: scale(1.08);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: #d4d4d4;
+    cursor: pointer;
+    padding: 0;
+    transition: background var(--transition), transform var(--transition), width var(--transition);
+}
+
+.carousel-dot.active {
+    background: var(--brand);
+    width: 24px;
+    border-radius: 4px;
+    transform: none;
+}

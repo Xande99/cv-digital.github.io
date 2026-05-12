@@ -1,11 +1,21 @@
 .introducao {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 80px 20px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     align-items: center;
+}
+
+.parallax-wrapper {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.parallax-img {
+    will-change: transform;
+    display: block;
 }
 
 .introducao h1 {
@@ -41,15 +51,16 @@
 @media (max-width: 800px) {
     .introducao {
         grid-template-columns: 1fr 1fr;
-        gap: 40px; 
+        gap: 40px;
+        padding: 60px 20px;
     }
     .introducao h1 {
-        font-size: 2rem
+        font-size: 2rem;
     }
     .introducao h1::before {
         width: 30px;
         height: 10px;
-        left: 0px;
+        left: 0;
     }
 }
 

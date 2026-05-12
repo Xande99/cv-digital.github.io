@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Xande - Desenvolvedor e Designer</title>
+        <title>Alexandre Júnior - Desenvolvedor e Designer</title>
         <meta name="description" content="Desenvolvedor Front End e UX/UI Designer, localizado em Guaratinguetá">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="./cruz.svg" type="image/svg+xml">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
+
      <body>
         <header class="header">
-            <img src="./img/Marca.svg" alt="Marca">
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="header-inner">
+                <img src="./img/Marca.svg" alt="Marca">
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main class="introducao">
-            <img src="./img/perfil.svg" alt="Foto de Perfil" width="300" height="412">
+            <div class="parallax-wrapper">
+                <img class="parallax-img" src="./img/perfil.svg" alt="Foto de Perfil" width="300" height="412">
+            </div>
             <div>
                 <h1>Desenvolvedor<br> Front End &<br> UX/UI Designer</h1>
                 <p>Localizado em Guaratinguetá/SP</p>
@@ -43,14 +51,14 @@
                     <ul class="empresa-habilidades">
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>Resposividade</li>
+                        <li>Responsividade</li>
                         <li>UX/UI Design</li>
                         <li>Semântica</li>
                     </ul>
                 </div>
 
                 <div class="empresa">
-                    <span class="empresa-mess">Março</span>
+                    <span class="empresa-mes">Março</span>
                     <h3 class="empresa-titulo">Bikcraft</h3>
                     <span class="empresa-titulo">Projeto</span>
                     <p class="empresa-texto">Desenvolvi um site institucional completo para a Bikcraft, aplicando conceitos de HTML semântico, CSS moderno e JavaScript para interações. O projeto foi focado em responsividade, organização de layout e boas práticas de desenvolvimento front-end.</p>
@@ -78,13 +86,13 @@
                     <ul class="faculdade-lista">
                         <li class="faculdade">
                             <span class="faculdade-tipo">Ensino Técnico</span>
-                            <h3 class="faculdade-curso ">Desenvolvimento de Sistemas</h3>
+                            <h3 class="faculdade-curso">Desenvolvimento de Sistemas</h3>
                             <span class="faculdade-instituicao">ETEC</span>
                         </li>
 
                         <li class="faculdade">
                             <span class="faculdade-tipo">Tecnólogo</span>
-                            <h3 class="faculdade-curso ">Design de Mídias Digitais</h3>
+                            <h3 class="faculdade-curso">Design de Mídias Digitais</h3>
                             <span class="faculdade-instituicao">FATEC</span>
                         </li>
                     </ul>
@@ -115,12 +123,13 @@
                 <p class="footer-texto">Estou disponível para novos projetos no momento.
                     Entre em contato comigo e marcamos uma conversa</p>
                     <ul class="footer-contato">
-                        <li>alexandre.resendedj@hotmail.com</li>
-                        <li>+55 12 97814-5247</li>
-                        <li><a href="https://www.instagram.com/ale.drj_/">@ale.drj</a></li>
+                        <li><a href="mailto:alexandre.resendedj@hotmail.com">alexandre.resendedj@hotmail.com</a></li>
+                        <li><a href="tel:+5512978145247">+55 12 97814-5247</a></li>
+                        <li><a href="https://www.instagram.com/ale.drj_/" target="_blank" rel="noopener noreferrer">@ale.drj</a></li>
                     </ul>
-                    <p class="footer-copy">Xande. Alguns direitos reservados.</p>
+                    <p class="footer-copy">Alexadre Júnior &copy; 2026.</p>
             </div>
         </footer>
+        <script src="js/main.js" defer></script>
     </body>
 </html>

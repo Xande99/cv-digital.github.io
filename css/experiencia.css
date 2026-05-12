@@ -1,10 +1,10 @@
 .experiencia {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 80px 20px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 100px; 
+    gap: 100px;
 }
 
 .experiencia .subtitulo {
@@ -13,100 +13,94 @@
 
 .experiencia-texto {
     font-size: 1.5rem;
-    line-height: 1.33;
+    line-height: 1.4;
     max-width: 40ch;
     margin-bottom: 60px;
-    color: #525252;
+    color: var(--gray-dark);
 }
 
 .experiencia-texto strong {
-    color: #141414;
+    color: var(--dark);
 }
 
 .empresa {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
-    padding: 20px;
-    background: #f5f5f5;
+    gap: 12px 24px;
+    padding: 28px 24px 24px 24px;
+    background: var(--gray-light);
     margin-bottom: 20px;
-    border-radius: 4px;
+    border-radius: var(--radius);
+    border-left: 3px solid var(--brand);
     position: relative;
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.empresa::before {
-    content: '';
-    display: block;
-    width: 6px;
-    height: 15px;
-    background: linear-gradient(#5500FF, #E2E2E2);
-    position: absolute;
-    top: 23px;
-    left: 10px;
+.empresa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(85, 0, 255, 0.08);
 }
 
 .empresa-mes {
-    position: absolute;
-    top: 22px;
-    left: 115px;
-    color: #525252;
-    font-size: 0.875rem;
-}
-
-.empresa-mess {
-    position: absolute;
-    top: 22px;
-    left: 100px;
-    color: #525252;
-    font-size: 0.875rem;
+    grid-column: 1 / -1;
+    color: var(--brand);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: -4px;
 }
 
 .empresa-titulo {
     font-size: 1.125rem;
-    line-height: 1.1;
-    font-weight: bold;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .empresa-texto {
     font-size: 0.875rem;
-    line-height: 1.4;
-    color: #525252;
+    line-height: 1.5;
+    color: var(--gray-dark);
+    grid-column: 1 / -1;
 }
 
 .empresa-habilidades {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     align-content: start;
+    grid-column: 1 / -1;
 }
 
 .empresa-habilidades li {
-font-size: 0.875rem;
-line-height: 1.4;
-border-radius: 4px;
-background: #ffffff;
-padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    border-radius: 100px;
+    background: var(--brand-muted);
+    color: var(--brand);
+    padding: 4px 12px;
+    transition: background var(--transition), color var(--transition);
+}
+
+.empresa-habilidades li:hover {
+    background: var(--brand);
+    color: var(--white);
 }
 
 @media (max-width: 800px) {
     .experiencia {
-    grid-template-columns: 1fr;
-    gap: 40px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 20px;
     }
 
     .experiencia .subtitulo {
-        color: #141414;
+        color: var(--dark);
     }
 
     .experiencia-texto {
         font-size: 1.25rem;
-    }
-
-    .empresa-ano {
-        position: initial;
-        order: 1;
-        width: initial;
-        text-align: left;
     }
 }
 
